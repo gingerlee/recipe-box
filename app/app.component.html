@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>Recipes of the Day {{month}}/{{day}}/{{year}}</h1>
+  <ul>
+    <li *ngFor='let currentRecipe of recipes'>
+      <h3>{{currentRecipe.title}}</h3>
+      <h5>Total Cooking Time: {{currentRecipe.cooktime}}</h5>
+      <!-- <h4>Ingredients:</h4>
+        <ul>
+          <li *ngFor='let ingredient of currentRecipe.ingredients'>{{ingredient}}</li>
+        </ul> -->
+    </li>
+  </ul>
+</div>
