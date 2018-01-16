@@ -3,11 +3,15 @@
   <ul>
     <li *ngFor='let currentRecipe of recipes'>
       <h3>{{currentRecipe.title}}</h3>
-      <h5>Total Cooking Time: {{currentRecipe.cooktime}}</h5>
-      <!-- <h4>Ingredients:</h4>
+      <h4>Total Cooking Time: {{currentRecipe.cooktime}}</h4>
+      <h4>Ingredients:</h4>
         <ul>
-          <li *ngFor='let ingredient of currentRecipe.ingredients'>{{ingredient}}</li>
-        </ul> -->
+          <li *ngFor='let blerg of currentRecipe.ingredients'>{{blerg}}</li>
+        </ul>
+      <h4>Directions:</h4>
+        <ol>
+          <li *ngFor='let blerg of currentRecipe.directions'>{{blerg}}</li>
+        </ol>
     </li>
   </ul>
 </div>
