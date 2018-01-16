@@ -1,16 +1,16 @@
 <div class="container">
   <h1>Recipes of the Day {{month}}/{{day}}/{{year}}</h1>
   <ul>
-    <li *ngFor='let currentRecipe of recipes'>
-      <h3>{{currentRecipe.title}}</h3>
-      <h4>Total Cooking Time: {{currentRecipe.cooktime}}</h4>
+    <li *ngFor='let recipe of recipes'>
+      <h3>{{recipe.title}}</h3>
+      <h4>Total Cooking Time: {{recipe.cooktime}}</h4>
       <h4>Ingredients:</h4>
         <ul>
-          <li *ngFor='let blerg of currentRecipe.ingredients'>{{blerg}}</li>
+          <li *ngFor='let blerg of recipe.ingredients'>{{blerg}}</li>
         </ul>
       <h4>Directions:</h4>
         <ol>
-          <li *ngFor='let blerg of currentRecipe.directions'>{{blerg}}</li>
+          <li *ngFor='let blerg of recipe.directions'>{{blerg}}</li>
         </ol>
     </li>
   </ul>

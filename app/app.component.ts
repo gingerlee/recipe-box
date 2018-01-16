@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  currentRecipe: string = 'New Recipe';
   currentTime = new Date();
   month: number = this.currentTime.getMonth() + 1;
   day: number = this.currentTime.getDate();
